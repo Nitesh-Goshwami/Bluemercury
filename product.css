@@ -1,17 +1,148 @@
+/*********************
+Start: Navigation bar
+**********************/
+
+#main_nav {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-family: Montserrat Medium, sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  clear: both;
+  /*background-color: tomato;*/
+}
+
+.top_part {
+  display: flex;
+  /*background-color: aqua;*/
+  padding: 10px 50px;
+}
+
+.top_part > div {
+  /*background-color: rgb(255, 225, 57);*/
+  margin: 2px;
+  flex-basis: 100%;
+}
+
+.top_part ul,
+.bottom_part ul {
+  display: flex;
+  margin: 0px;
+  list-style-type: none;
+  flex: 1 1 0%;
+  padding: 0px;
+  /*background-color: chocolate;*/
+}
+
+.top_part ul > li {
+  justify-self: center;
+  /*text-align: right;*/
+  flex-basis: 100%;
+  /*background-color: crimson;*/
+  /*flex-wrap: nowrap;*/
+  height: 30px;
+}
+
+.bottom_part ul li {
+  /*justify-self: center;*/
+  /*width: 150px;*/
+  /*padding: 5px;*/
+  margin: 1px;
+  flex-basis: 100%;
+  /*background-color: thistle;*/
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  flex: 1 1 0%;
+}
+
+.top_part ul li a,
+.bottom_part ul li a {
+  text-decoration: none;
+  text-align: center;
+  color: #5e769b;
+  /*padding-left: 7px;
+    padding-right: 20px;*/
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.navItem {
+  align-self: flex-start;
+}
+
+.navItem li {
+  /*background-color: tomato;*/
+  margin: 1px;
+  text-align: center;
+  padding: 3px;
+}
+
+.logo img {
+  min-width: 150px;
+  max-width: 200px;
+}
+
+.logo {
+  align-self: center;
+  flex-shrink: 2;
+}
+
+.navItem > li:hover {
+  color: #12284c;
+  border-bottom: 3px solid #12284c;
+  transition: cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+/* nav Bar End */
+
+/*************************
+Start: Carousel Section
+*************************/
+
+.announcement-bar {
+  width: 100%;
+  margin: auto;
+  background-color: #12284c;
+  color: white;
+  height: 35px;
+  padding-top: 0.1px;
+  font-size: 12px;
+  margin: 0px;
+}
+
+/*************************
+End: Carousel Section
+*************************/
+
 #product_img {
   display: grid;
   grid-template-columns: repeat(2, 25%);
   width: 35%;
   height: 600px;
-  margin-left: 8%;
+  margin-left: 12%;
+  margin-top: 50px;
   float: left;
   border-bottom: 2px solid #dcdcdc;
-  
 }
 #product_img {
-    cursor: zoom-in;
-  }
+  cursor: zoom-in;
+}
 
+.page_navigator {
+  margin-left: 13%;
+  margin-top: 25px;
+  padding: 0 10px;
+  font-family: Montserrat Light,sans-serif;
+}
+.page_navigator span {
+    font-family: Montserrat Semi Bold,sans-serif;
+    color: #12284c;
+}
 
 div > img:hover {
   border: 1px solid #777;
@@ -31,21 +162,21 @@ div > img:hover {
   float: left;
 }
 .product_count {
-    height: 35px;
-    width: 40px;
-    border: 1px;  
-    text-align: center;
-    float: left;
-    padding-top: 5px;
-    border: 1px solid #dcdcdc;
+  height: 35px;
+  width: 40px;
+  border: 1px;
+  text-align: center;
+  float: left;
+  padding-top: 4px;
+  border: 1px solid #dcdcdc;
 }
-#product_content{
-    width: 40%;
-    height: 600px;
-    float: right;
-    border-bottom: 2px solid #dcdcdc;
+#product_content {
+  width: 40%;
+  height: 600px;
+  float: right;
+  border-bottom: 2px solid #dcdcdc;
+  margin-top: 50px;
 }
-
 
 #product_deatils {
   width: 70%;
@@ -81,53 +212,54 @@ div > img:hover {
   margin-bottom: 10px;
   cursor: pointer;
 }
-.detail_line{
-    margin-top: 15px;
-    margin-bottom: 30px;
-    border-bottom: .5px solid #dcdcdc;
-    padding-bottom: 20px;
+.detail_line {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  border-bottom: 0.5px solid #dcdcdc;
+  padding-bottom: 20px;
 }
 .container {
-    font-family: 'montserratlight', Klarna Text, "Klarna Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;
-    text-align: center;
-    color: #12284c;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 20px;
-    background-color: #FFFFFF;
-    border-style: solid;
-    border-color: #979797;
-    border-radius: 0px;
-    border-width: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+  font-family: "montserratlight", Klarna Text, "Klarna Sans", "Helvetica Neue",
+    Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #12284c;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  background-color: #ffffff;
+  border-style: solid;
+  border-color: #979797;
+  border-radius: 0px;
+  border-width: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 #wishlist_btn {
-    position: relative;
-    color: #12284c !important;
-    cursor: pointer;
-    padding: 15px;
-    border: 0px solid #dcdcdc;
-    width: 100%;
-    height: auto;
-    stroke: #12284c;
-    background-color: #fff!important;
-    font-size: 16px;
-    max-height: 44px;
-    display: flex;
-    text-transform: none;
-    font-family: Montserrat Regular,sans-serif!important;
-    text-indent: 0;
-    margin-top: 50px;
+  position: relative;
+  color: #12284c !important;
+  cursor: pointer;
+  padding: 15px;
+  border: 0px solid #dcdcdc;
+  width: 100%;
+  height: auto;
+  stroke: #12284c;
+  background-color: #fff !important;
+  font-size: 16px;
+  max-height: 44px;
+  display: flex;
+  text-transform: none;
+  font-family: Montserrat Regular, sans-serif !important;
+  text-indent: 0;
+  margin-top: 50px;
 }
 
 .shipping_detail {
-    margin-top: 10px;
-    font-family: Montserrat Medium,sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: .2px;
-    line-height: 20px;
+  margin-top: 10px;
+  font-family: Montserrat Medium, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  line-height: 20px;
 }
