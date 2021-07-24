@@ -181,28 +181,18 @@ function showItems(l) {
     img.addEventListener("click", function () {
       window.location.href = "product.html";
     });
-    // wish.addEventListener("click", function () {
-    //   wish.style.background = "#5e769b";
-    // });
-    // wish.removeEventListener("click", function () {
-    //   wish.style.background = "white";
-    // });
-
+    
     var i = 0;
     function swtichArrayColor() {
-      var arr = ["#5e769b", "white"]; 
+      var arr = ["#5e769b", "white"];
       if (i % 2 == 0) {
         wish.style.backgroundColor = arr[0];
-      }
-      else {
+      } else {
         wish.style.backgroundColor = arr[1];
       }
-        i++;
+      i++;
     }
-    wish.addEventListener('click', swtichArrayColor);
-
-
-
+    wish.addEventListener("click", swtichArrayColor);
 
     div.append(wish, img, p_name, span_title, p_price);
     items_div.append(div);
@@ -249,6 +239,29 @@ function myFunction() {
     sortHL();
   }
 }
+//  filtering 
+
+// let item_name = document.getElementById("PHYTO").value;
+// console.log(item_name)
+// console.log("goswami")
+// if(item_name == "PHYTO") {
+//   filter()
+// }
+// function filter() {
+//   let items = JSON.parse(localStorage.getItem("items"));
+//   console.log("name")
+//   items = items.sort(function (a, b) {
+//     return a.price - b.price;
+//   });
+//   showItems(items);
+
+// }
+
+
+
+
+
+
 
 // Sprting Functions for Low to high and High to low
 function sortLH() {
@@ -268,3 +281,29 @@ function sortHL() {
   });
   showItems(items);
 }
+
+let dropDown_type = document.getElementById("dropdown_type");
+
+dropDown_type.addEventListener("click", function () {
+  document.getElementById("myDropdown_type").classList.toggle("show");
+});
+
+let dropDown_brand = document.getElementById("dropdown_brand");
+
+dropDown_brand.addEventListener("click", function () {
+  document.getElementById("myDropdown_brand").classList.toggle("show");
+});
+
+let dropdown_shopby = document.getElementById("dropdown_shopby");
+
+dropdown_shopby.addEventListener("click", function () {
+  document.getElementById("myDropdown_shopby").classList.toggle("show");
+});
+
+let dropdown_price = document.getElementById("dropdown_price");
+
+dropdown_price.addEventListener("click", function () {
+  document.getElementById("myDropdown_price").classList.toggle("show");
+});
+
+

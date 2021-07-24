@@ -49,7 +49,7 @@ img_1.addEventListener("click", function () {
 
 
 cart_btn.addEventListener("click", function () {
-    window.location.href = "new!.html";
+    window.location.href = "new.html";
   });
 
   remove_count.addEventListener("click", function () {

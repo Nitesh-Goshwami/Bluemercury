@@ -1,0 +1,322 @@
+.cart{
+    width: 85%;
+    height: 85%;
+    /* background-color:black; */
+    margin: auto;
+}
+
+
+
+.cart_1{
+    width:100%;
+    
+    font-size:80px;
+
+}
+   
+    
+
+
+.cart_container{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+   /* padding-left: 30px; */
+    text-transform: uppercase;
+   color: #12284c;
+   font-size: 30px;
+
+    
+}
+/* blue rewards */
+
+.reward_login{
+    height:70px ;
+    width: 100%;
+    margin:auto;
+    background-color: #ecffff;
+    display: flex;
+}
+.rewards_blue{
+    
+    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+   font-size: 25px;
+   color: #12284c;
+   line-height:34.65px;
+   
+
+}
+.rewards{
+    color: #12284c;
+    line-height:34.65px;
+}
+
+.free_Shipping{
+padding-top: 30px;
+margin-left: 10px;
+}
+.log_in_cart{
+    padding-top: 30px;
+    margin-left:150px;
+    font-size: 15px;
+    
+}
+
+.join_now{
+   
+    padding-top: 15px;
+    margin-left: 50px;
+}
+.join_now>button{
+    height: 40px;
+    width: 180px;
+    background-color:rgb(13, 13, 65);
+    color: white;
+    font-family:  'Montserrat', sans-serif;
+    font-size: 15px;
+}
+.your_Cart{
+  font-size:20px;
+  margin-left:45px;
+  font-weight: 400;
+  font-family:  'Montserrat', sans-serif;
+}
+/* you cart */
+.gift{ 
+     display:flex;
+ }
+.checkbox{
+    margin-left:45px;
+   height: 20px;
+   width: 20px;
+  padding: 0;
+}
+.gift_Order{
+    padding-bottom: 20px;
+
+}
+.order{
+    padding-left: 2%;
+    font-family: "Montserrat Semi Bold", sans-serif;
+    font-weight: 600;
+    font-size :14px;
+    
+}
+.hidden{
+    padding-left: 8%;
+    font-family: "Montserrat Light", sans-seri;
+    font-weight: 400;
+    line-height:23.1px;
+    font-size:14px;
+
+}
+/* ready to ship */
+#ready_shift{
+    height:50px;
+   
+    
+    width:100%;
+}
+#readytoshift{
+    float: left;
+    width:50%;
+    
+    font-size:25px;
+    font-family:  'Montserrat', sans-serif;
+    padding:10px;
+    padding-top: 10px;
+    font-weight: 300;
+    }
+    #price{
+        float: left;
+       
+    width:15%;
+    
+    font-size: 15px;
+    text-align:centre;
+    font-family:  'Montserrat', sans-serif;
+    padding:10px;
+    padding-top: 10px;
+    font-weight: 400;
+    }
+    #quantity{
+        float: left;
+        font-size: 15px;
+        width:10%;
+   
+   text-align:centre;
+    font-family:  'Montserrat', sans-serif;
+    padding:10px;
+    padding-top: 10px;
+    font-weight: 400;
+    }
+    #total{
+        float: left;
+        width:15%;
+        font-size: 15px;
+   
+   text-align:right;
+    font-family:  'Montserrat', sans-serif;
+    padding:10px;
+    padding-top: 10px;
+    font-weight: 400;
+      
+    }
+
+
+#line{
+    width:100%;
+    border-bottom: 1px solid #dcdcdc;
+}
+#cart_Bag{
+    width:80%;
+    height: 150px;
+}
+#line1{
+    width:100%;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+#Offerings{
+    font-size: 20px;
+    font-family:  'Montserrat', sans-serif;
+     
+    
+}
+#Offer{
+    font-family:  'Montserrat', sans-serif;
+    font-size:15px;
+}
+/*  sampe product */
+#sampleProduct{
+    border-bottom: 1px solid #dcdcdc;
+    width: 100%;
+    padding-top: 20px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    border-top: 1px solid #dcdcdc;
+    flex-direction: row;
+    margin-right: 10px;
+  
+    /*https://github.com/Nitesh-Goshwami/bluemercuryDemo.git  */
+    
+}
+.img1{
+    width: 25%;
+    display: flex;
+    
+    /* margin: 5px; */
+}
+.sample_img1{
+    height: 94px;
+    margin-right: 5px;
+    width: 95px !important;
+    display:block;
+    width:10%
+}
+.complimentary{
+  
+    font-family: "Montserrat Medium",sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: .2px;
+    text-transform: uppercase;
+    color: #12284c;
+    font-weight: 400;
+    position: relative;
+
+    margin-bottom: 12px;
+    display: -ms-flexbox;
+    display: flex;
+}
+.footer {
+    padding-top: 40px;
+    height:100px;
+    width:100%;
+    /* border:1px solid black; */
+    display: flex;
+    flex:wrap;
+}
+
+.shipping{
+    /* margin-top: 10px; */
+    height: 50px;
+    width:45%;
+    background-color: #f4fafc;
+    margin-left: 55%;
+    /* display: block; */
+   
+    text-align: right;
+    font-family: 'Montserrat Medium',sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+   line-height:23.1px;
+    color: #12284c;
+    padding: 13px 20px 13px 0;
+}
+#cart_total{
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    font-family: 'Montserrat Medium',sans-serif;
+    margin-left: 85%;
+    color: #12284c;
+}
+
+.tax{
+    font-weight: inherit;
+    text-align: right;
+    font-family: 'Montserrat Medium',sans-serif;
+    font-size: 15px;
+}
+#checkout{
+    text-transform: uppercase;
+    width: 45%;
+    margin-top: 21px;
+    margin-left: 55%;
+    margin-bottom: 12px;
+    
+    display: flex;
+   
+    align-items: center;
+   
+    justify-content: center;
+    height: 40px;
+    color: white;
+    background-color:#12284c;
+   
+    font-family:  "Montserrat Light", sans-serif;
+    font-size: 14px;
+    line-height:23.1px;
+    text-decoration: none;
+    ;
+}
+
+.paypal{
+background-color: #ffc439;;
+text-transform: uppercase;
+    width: 45%;
+    margin-top: 21px;
+    margin-left: 55%;
+    margin-bottom: 12px;
+    
+    display: flex;
+   
+    align-items: center;
+   
+    justify-content: center;
+    height: 40px;
+    
+    
+    color:#12284c;
+    font-family:  "Montserrat Light", sans-serif;
+    font-size: 14px;
+    line-height:23.1px;
+}
