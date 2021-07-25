@@ -1,3 +1,18 @@
+body {
+  font-family: Montserrat Medium, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #12284c;
+  margin: 0;
+  padding: 0;
+}
+
 /* #main_container{
     width: 100%;
 } */
@@ -65,8 +80,11 @@
   margin-right: 10px;
 }
 
-#pay_pal {
+#pay_pal img {
     float: left;
+    margin-left: -35px;
+    margin-top: 5px;
+    width: 100px;
 }
 
 #klarna_img{
@@ -341,6 +359,11 @@ ul {
   opacity: 0.8;
   border: transparent;
   background-color: transparent;
+  line-height: 2em;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  width: 100%;
 }
 
 #apply_btn {
@@ -350,6 +373,7 @@ ul {
   font-size: 16px;
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
+  border: none;
 }
 
 #Prod_row_3 {
@@ -399,9 +423,9 @@ ul {
 
 #calcutate {
   text-align: right;
-  font-size: 11px;
+  font-size: 16px;
   font-weight: 400;
-  margin-left: 50%;
+  margin-left: 72%;
 }
 
 #subtotal_row3 {
@@ -424,7 +448,7 @@ ul {
   text-align: right;
   font-size: 20px;
   font-weight: 500;
-  margin-left: 58%;
+  margin-left: 75%;
 }
 
 #usd {
