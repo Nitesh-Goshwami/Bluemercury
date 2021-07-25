@@ -3,7 +3,7 @@ Body
 *********************/
 
 body {
-  font-family: Montserrat Medium,sans-serif;
+  font-family: Montserrat light,sans-serif;
   font-weight: 500;
   font-size: 12px;
   letter-spacing: 1px;
@@ -22,24 +22,25 @@ Start: Navigation bar
 **********************/
 
 #main_nav {
-  position: relative;
+  position: sticky;
+  top: 0;
   display: flex;
   flex-direction: column;
+  /* box-shadow: 0px 0px 3px 0px #12284C; */
+  border-bottom: 2px solid #DCDCDC;
+  background-color: white;
   text-transform: uppercase;
   font-family: Montserrat Medium,sans-serif;
   font-size: 12px;
   letter-spacing: 1px;
-  /*background-color: tomato;*/
 }
 
 .top_part {
   display: flex;
-  /*background-color: aqua;*/
   padding: 10px 50px;
 }
 
 .top_part > div {
-  /*background-color: rgb(255, 225, 57);*/
   margin: 2px;
   flex-basis: 100%;
 }
@@ -54,28 +55,21 @@ Start: Navigation bar
   list-style-type: none;
   flex: 1 1 0%;
   padding: 0px;
-  /*background-color: chocolate;*/
 }
 
 .top_part ul > li {
   justify-self: center;
-  /*text-align: right;*/
   flex-basis: 100%;
-  /*background-color: crimson;*/
   /*flex-wrap: nowrap;*/
   height: 30px;
 }
 
 .bottom_part ul li {
-  /*justify-self: center;*/
-  /*width: 150px;*/
-  /*padding: 5px;*/
   margin: 1px;
   flex-basis: 100%;
-  /*background-color: thistle;*/
 }
 
-.menu {
+.main_menu {
   display: flex;
   justify-content: space-around;
   width: 50%;
@@ -84,7 +78,7 @@ Start: Navigation bar
   font-size: 16px;
 }
 
-.menu li:hover {
+.main_menu li:hover {
   border-bottom: 3px solid #12284C;
 }
 
@@ -99,14 +93,12 @@ Start: Navigation bar
 }
 
 .navItem {
-  /*align-self: flex-end;*/
   width: 80%;
   right: 0;
   float: right;
 }
 
 .navItem li {
-  /*background-color: tomato;*/
   margin: 1px;
   text-align: center;
   padding: 3px;

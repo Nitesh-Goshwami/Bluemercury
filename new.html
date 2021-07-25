@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <!--Navbar Start-->
+    <!--Navbar-->
 
     <nav id="main_nav">
 
@@ -29,7 +29,9 @@
                 </a>
             </div>
             <div class="logo">
-                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/blm_36dad4a4-9b14-4ef8-9509-6a593f135aae_416x@2x.png?v=1588538421"/>
+                <a href="homepage.html">
+                    <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/blm_36dad4a4-9b14-4ef8-9509-6a593f135aae_416x@2x.png?v=1588538421"/>
+                </a>
             </div>
             <div class="nav_links">
                 <ul class="navItem">
@@ -46,7 +48,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="Signup.html" class="navlink">
+                        <a href="login.html" class="navlink">
                             <i class="fa fa-user-circle"></i>
                             Sign in/up
                         </a>
@@ -62,12 +64,26 @@
         </div>
         
         <div class="bottom_part">
-            <div class="menu">
-                <ul class="navItem">
-                    <li>
-                        <a href="homepage.html" class="navlink">
+            <div class="main_menu">
+                <ul class="menu">
+                    <li class="dropdown">
+                        <a class="navlink">
                             Shop
                         </a>
+                        <ul class="dropdown-nav">
+                            <li><a href="new.html">SKIN CARE</a></li>
+                            <li><a href="new.html">MAKEUP</a></li>
+                            <li><a href="new.html">BATH &amp; BODY</a></li>
+                            <li><a href="new.html">HAIR</a></li>
+                            <li><a href="new.html">SUN &amp; TAN</a></li>
+                            <li><a href="new.html">SCENTS &amp; HOME</a></li>
+                            <li><a href="new.html">MEN</a></li>
+                            <li><a href="new.html">TOOLS &amp; ACCESSORIES</a></li>
+                            <li><a href="new.html">GIFTS</a></li>
+                            <li><a href="new.html">BEST SELLERS</a></li>
+                            <li><a href="new.html">CONSCIOUS BEAUTY</a></li>
+                            <li><a href="new.html">SALE + FREE GIFTS!</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="new.html" class="navlink">
@@ -98,7 +114,6 @@
             </div>
         </div>
     </nav>
-    <!-- NavBar End -->
 
     <!--Carousel section-->
     <div class="carousel-section">
@@ -156,20 +171,24 @@
                             </path>
                         </svg>
                     </span>
-                    <span class="TotalFilters">99 available</span>
+                    <span class="TotalFilters">7 available</span>
                 </div>
                 <div id="myDropdown_type" class="dropdown-content">
                     <form>
-                        <input type="checkbox" id="ABEL" name="ABEL" value="ABEL">
-                        <label for="ABEL" class="FilterName"> ABEL</label><br>
-                        <input type="checkbox" id="LAFCO" name="LAFCO" value="LAFCO">
-                        <label for="LAFCO" class="FilterName"> LAFCO</label><br>
-                        <input type="checkbox" id="vehicle3" name="PHYTO" value="PHYTO">
-                        <label for="PHYTO" class="FilterName"> PHYTO</label><br>
-                        <input type="checkbox" id="Acqua" name="Acqua Di Parma" value="Acqua Di Parma">
-                        <label for="Acqua Di Parma" class="FilterName">Acqua Di Parma</label><br>
-                        <input type="checkbox" id="KLORANE" name="KLORANE" value="KLORANE">
-                        <label for="KLORANE" class="FilterName">KLORANE</label><br>
+                        <input type="checkbox" id="Anti-Aging Devices" name="Anti-Aging Devices" value="ABEL">
+                        <label for="Anti-Aging Devices" class="FilterName"> Anti-Aging Devices</label><br>
+                        <input type="checkbox" id="Bath And Body Sets" name="Bath And Body Sets" value="Bath And Body Sets">
+                        <label for="Bath And Body Sets" class="FilterName"> Bath And Body Sets</label><br>
+                        <input type="checkbox" id="Bath Oil" name="Bath Oil" value="Bath Oil">
+                        <label for="Bath Oil" class="FilterName"> Bath Oil</label><br>
+                        <input type="checkbox" id="Bath Salts" name="Bath Salts" value="Bath Salts">
+                        <label for="Bath Salts" class="FilterName">Bath Salts</label><br>
+                        <input type="checkbox" id="Blemish And Acne Treatments" name="Blemish And Acne Treatments" value="Blemish And Acne Treatments">
+                        <label for="Blemish And Acne Treatments" class="FilterName">Blemish And Acne</label><br>
+                        <input type="checkbox" id="Cleansers" name="Cleansers" value="Cleansers">
+                        <label for="Cleansers" class="FilterName">Cleansers</label><br>
+                        <input type="checkbox" id="Dry Shampoos" name="Dry Shampoos" value="Dry Shampoos">
+                        <label for="Dry Shampoos" class="FilterName">Dry Shampoos</label><br>
                     </form>
                 </div>
             </div>
@@ -182,26 +201,26 @@
                             </path>
                         </svg>
                     </span>
-                    <span class="TotalFilters">99 available</span>
+                    <span class="TotalFilters">5 available</span>
                 </div>
                 <div id="myDropdown_brand" class="dropdown-content">
                     <form>
-                        <input type="checkbox" id="ABEL" name="ABEL" value="ABEL">
-                        <label for="ABEL" class="FilterName"> ABEL</label><br>
-                        <input type="checkbox" id="LAFCO" name="LAFCO" value="LAFCO">
+                        <input type="checkbox" id="Deborah_Lippmann" onclick="deborah()" name="Deborah_Lippmann" value="Deborah_Lippmann">
+                        <label for="Deborah_Lippmann" class="FilterName"> Deborah_Lippmann</label><br>
+                        <input type="checkbox" id="LAFCO" onclick="lafco()" name="LAFCO" value="LAFCO">
                         <label for="LAFCO" class="FilterName"> LAFCO</label><br>
-                        <input type="checkbox" id="vehicle3" name="PHYTO" value="PHYTO">
+                        <input type="checkbox" id="PHYTO" onclick="phyto()" name="PHYTO" value="PHYTO">
                         <label for="PHYTO" class="FilterName"> PHYTO</label><br>
-                        <input type="checkbox" id="Acqua" name="Acqua Di Parma" value="Acqua Di Parma">
+                        <input type="checkbox" id="Acqua" onclick="acqua()"  name="Acqua Di Parma" value="Acqua Di Parma">
                         <label for="Acqua Di Parma" class="FilterName">Acqua Di Parma</label><br>
-                        <input type="checkbox" id="KLORANE" name="KLORANE" value="KLORANE">
+                        <input type="checkbox" id="KLORANE" onclick="klorane()" name="KLORANE" value="KLORANE">
                         <label for="KLORANE" class="FilterName">KLORANE</label><br>
                     </form>
                 </div>
             </div>
             <div>
                 <div id="dropdown_shopby" class="dropbtn"><span class="FilterType">Shop By </span>
-                    <span class="TotalFilters">99 available</span>
+                    <span class="TotalFilters">10 available</span>
                     <span class="Icon" aria-hidden="true">
                         <svg class="Icon--plus" viewBox="0 0 16 16">
                             <path d="M8 1v14M1 8h14" stroke="currentColor" fill="none" fill-rule="evenodd"
@@ -227,7 +246,7 @@
             </div>
             <div>
                 <div id="dropdown_conscious_beauty" class="dropbtn"><span class="FilterType">Conscious Beauty</span>
-                    <span class="TotalFilters">99 available</span>
+                    <span class="TotalFilters">6 available</span>
                     <span class="Icon" aria-hidden="true">
                         <svg class="Icon--plus" viewBox="0 0 16 16">
                             <path d="M8 1v14M1 8h14" stroke="currentColor" fill="none" fill-rule="evenodd"
@@ -253,7 +272,7 @@
             </div>
             <div>
                 <div id="dropdown_price" class="dropbtn"><span class="FilterType">Price</span>
-                    <span class="TotalFilters">99 available</span>
+                    <span class="TotalFilters">5 available</span>
                     <span class="Icon" aria-hidden="true">
                         <svg class="Icon--plus" viewBox="0 0 16 16">
                             <path d="M8 1v14M1 8h14" stroke="currentColor" fill="none" fill-rule="evenodd"
@@ -295,120 +314,120 @@
 
 
 <!--Footer-->
-    <footer class="footer-part">
-        <div class="newsletter">
-            <p>Get Expert Beauty Insight & Offers</p>
-            <form id="footer-mail-collect" onsubmit="overlaymsg(event)">
-                <div id="mail-submission-success-overlay">       
-                    <div>
-                        <!-- <img src="https://i2.wp.com/i.pinimg.com/originals/70/a5/52/70a552e8e955049c8587b2d7606cd6a6.gif"/> -->
-                        <img src="https://thumbs.gfycat.com/ShyCautiousAfricanpiedkingfisher-max-1mb.gif" alt="successful" />
-                        <p>You will hear from us soon!</p>
-                        <div onclick="overlayMsgHide()" id="hide-overlay">Done</div>
-                    </div>
+<footer class="footer-part">
+    <div class="newsletter">
+        <p>Get Expert Beauty Insight & Offers</p>
+        <form id="footer-mail-collect" onsubmit="overlaymsg(event)">
+            <div id="mail-submission-success-overlay">       
+                <div>
+                    <!-- <img src="https://i2.wp.com/i.pinimg.com/originals/70/a5/52/70a552e8e955049c8587b2d7606cd6a6.gif"/> -->
+                    <img src="https://thumbs.gfycat.com/ShyCautiousAfricanpiedkingfisher-max-1mb.gif" alt="successful" />
+                    <p id="success-msg">You will hear from us soon!</p>
+                    <div onclick="overlayMsgHide()" id="hide-overlay">Done</div>
                 </div>
-                <input class="footer-mail e-mail" name="e-mail" type="email" placeholder="EMAIL ADDRESS"/>
-                <button id="arrow-submit-btn" type="submit">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                </button>
-            </form>
-            <p>To learn more about how we use your information and your rights, see Privacy Note</p>
-            <p class="icons">
-                <a href="https://twitter.com/bluemercury"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href="https://www.pinterest.com/bluemercury/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-                <a href="https://facebook.com/bluemercury"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="https://instagram.com/bluemercury"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href="https://www.youtube.com/channel/UCrgUXfV7IIFllEQMbzd9J3A"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-            </p>
-            <p> Copyright 2021 bluemercury. All Rights Reserved.</p>
-        </div>
+            </div>
+            <input class="footer-mail e-mail" id="newsletter-mail-input" name="e-mail" type="email" placeholder="EMAIL ADDRESS" />
+            <button id="arrow-submit-btn" type="submit">
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </button>
+        </form>
+        <p>To learn more about how we use your information and your rights, see Privacy Note</p>
+        <p class="icons">
+            <a href="https://twitter.com/bluemercury" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.pinterest.com/bluemercury/" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+            <a href="https://facebook.com/bluemercury" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://instagram.com/bluemercury" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/channel/UCrgUXfV7IIFllEQMbzd9J3A" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+        </p>
+        <p> Copyright 2021 bluemercury. All Rights Reserved.</p>
+    </div>
 
-        <div class="footer-navwrap">
-            <div class="bluemercury-links">
-                <h2>Bluemercury</h2>
-                <ul>
-                    <li>
-                        <a href="#">Our Company</a>
-                    </li>
-                    <li>
-                        <a href="#">Store Locator</a>
-                    </li>
-                    <li>
-                        <a href="#">In-Store & Online Events</a>
-                    </li>
-                    <li>
-                        <a href="#">Spa Menu</a>
-                    </li>
-                    <li>
-                        <a href="#">Press</a>
-                    </li>
-                    <li>
-                        <a href="#">Careers</a>
-                    </li>
-                    <li>
-                        <a href="#">Vendor Submissions</a>
-                    </li>
-                    <li>
-                        <a href="#">Diversity & Inclusion</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="myaccount-links">
-                <h2>My Account</h2>
-                <ul>
-                    <li>
-                        <a href="#">My Account</a>
-                    </li>
-                    <li>
-                        <a href="#">BlueRewards</a>
-                    </li>
-                    <li>
-                        <a href="#">Gift Card Balance Checker</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="customerservice-links">
-                <h2>Customer Service</h2>
-                <ul>
-                    <li>
-                        <a href="#">Contact Us</a>
-                    </li>
-                    <li>
-                        <a href="#">Help & FAQ</a>
-                    </li>
-                    <li>
-                        <a href="#">Shipping, Returns & Exchanges</a>
-                    </li>
-                    <li>
-                        <a href="#">Gift Cards</a>
-                    </li>
-                    <li>
-                        <a href="#">Offers & Promotions</a>
-                    </li>
-                    <li>
-                        <a href="#">Klarna</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="resources-links">
-                <h2>Resources</h2>
-                <ul>
-                    <li>
-                        <a href="#">Terms & Conditions</a>
-                    </li>
-                    <li>
-                        <a href="#">Privacy Policy</a>
-                    </li>
-                    <li>
-                        <a href="#">Accessiblility</a>
-                    </li>
-                    <li>
-                        <a href="#">COVID-19 Updates</a>
-                    </li>
-                </ul>
-            </div>
+    <div class="footer-navwrap">
+        <div class="bluemercury-links">
+            <h2>Bluemercury</h2>
+            <ul>
+                <li>
+                    <a href="#">Our Company</a>
+                </li>
+                <li>
+                    <a href="#">Store Locator</a>
+                </li>
+                <li>
+                    <a href="#">In-Store & Online Events</a>
+                </li>
+                <li>
+                    <a href="#">Spa Menu</a>
+                </li>
+                <li>
+                    <a href="#">Press</a>
+                </li>
+                <li>
+                    <a href="#">Careers</a>
+                </li>
+                <li>
+                    <a href="#">Vendor Submissions</a>
+                </li>
+                <li>
+                    <a href="#">Diversity & Inclusion</a>
+                </li>
+            </ul>
         </div>
-    </footer>
+        <div class="myaccount-links">
+            <h2>My Account</h2>
+            <ul>
+                <li>
+                    <a href="#">My Account</a>
+                </li>
+                <li>
+                    <a href="#">BlueRewards</a>
+                </li>
+                <li>
+                    <a href="#">Gift Card Balance Checker</a>
+                </li>
+            </ul>
+        </div>
+        <div class="customerservice-links">
+            <h2>Customer Service</h2>
+            <ul>
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+                <li>
+                    <a href="#">Help & FAQ</a>
+                </li>
+                <li>
+                    <a href="#">Shipping, Returns & Exchanges</a>
+                </li>
+                <li>
+                    <a href="#">Gift Cards</a>
+                </li>
+                <li>
+                    <a href="#">Offers & Promotions</a>
+                </li>
+                <li>
+                    <a href="#">Klarna</a>
+                </li>
+            </ul>
+        </div>
+        <div class="resources-links">
+            <h2>Resources</h2>
+            <ul>
+                <li>
+                    <a href="#">Terms & Conditions</a>
+                </li>
+                <li>
+                    <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#">Accessiblility</a>
+                </li>
+                <li>
+                    <a href="#">COVID-19 Updates</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
 </div>
 </body>
 

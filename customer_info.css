@@ -239,7 +239,7 @@ input#Email_checkbox{
 #Prod_row_1{
     display:flex;
     flex-direction:row;
-    
+
 }
 #Product_image_div{
     width: 95px;
@@ -352,7 +352,7 @@ border-radius:50%;
 #Prod_subtotal_text{
     font-family: 'Montserrat', sans-serif;
     color: #12284c;
-    
+
 }
 
 #subtotal_row1{
@@ -421,4 +421,4 @@ border-radius:50%;
 #usd{
     font-size:13px;
     font-weight: 400;
-}
+} 
