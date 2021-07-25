@@ -20,7 +20,7 @@
 
 <body>
 
-    <!--Navbar-->
+    <!--Navbar Start-->
 
     <nav id="main_nav">
         <div class="top_part">
@@ -55,7 +55,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="http://www.google.com" class="navlink">
+                        <a href="cart.html" class="navlink">
                             <i class="fa fa-shopping-bag" aria-hidden="true"></i>
                             Bag
                         </a>
@@ -68,12 +68,12 @@
             <div class="menu">
                 <ul class="navItem">
                     <li>
-                        <a href="http://www.google.com" class="navlink">
+                        <a class="navlink">
                             Shop
                         </a>
                     </li>
                     <li>
-                        <a href="new!.html" class="navlink">
+                        <a href="new.html" class="navlink">
                             New!
                         </a>
                     </li>
@@ -103,20 +103,20 @@
     </nav>
     <!-- NavBar End -->
 
-    <!--Carousel section-->
+    <!--Carousel section Start-->
     <div class="carousel-section">
         <div class="announcement-bar" id="slide-text"></div>
     </div>
+    <!--Carousel section end-->
 
-
-    <!-- Showing product's diffrent images  -->
-    <div class="page_navigator">Home › New Arrivals › <span> Daily Brightening UV Defense SPF 30 </span></div>
+    <!-- Showing product's different images -->
+    <div class="page_navigator">Home › New Arrivals › <span id="page_navigator-span"> Daily Brightening UV Defense SPF 30 </span></div>
     <div id="product_img">
         <div>
-            <img id="img_1"
+            <img id="img_1" class="side-img"
                 src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-3606000578579-1_100x.jpg?v=1623217977">
             <br>
-            <img id="img_2"
+            <img id="img_2" class="side-img"
                 src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-3606000578579-2_100x.jpg?v=1623217977">
         </div>
         <span>
@@ -124,15 +124,14 @@
                 src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-3606000578579-1_525x525.jpg?v=1623217977">
         </span>
     </div>
-
     <!-- For product specification and to add into cart -->
 
     <div id="product_content">
         <div id="product_deatils">
-            <h2>SKINCEUTICALS</h2>
-            <h1>Daily Brightening UV Defense SPF 30</h1>
-            <span style="font-size: 16px;">$54 <i class="material-icons"
-                    style="color: rgb(204, 210, 216);margin-left: 20px; font-size: large;">star_rate</i><i
+            <h2 id="prod-company-name">SKINCEUTICALS</h2>
+            <h1 id="prod-title-name">Daily Brightening UV Defense SPF 30</h1>
+            <span style="font-size: 16px;"><div id="dynamic-price">$54</div> <i class="material-icons"
+                    style="color: rgb(204, 210, 216); font-size: large;">star_rate</i><i
                     class="material-icons" style="color: rgb(204, 210, 216); font-size: large;">star_rate</i><i
                     class="material-icons" style="color: rgb(204, 210, 216); font-size: large;">star_rate</i><i
                     class="material-icons" style="color: rgb(204, 210, 216); font-size: large;">star_rate</i><i
@@ -142,7 +141,7 @@
                 <button id="remove_count" class="quantitySelector_btn">-</button>
                 <div id="product_count" class="product_count">1</div>
                 <button id="add_count" class="quantitySelector_btn">+</button>
-                <button id="add_to_bag">ADD TO BAG | $54 </button>
+                <button id="add_to_bag">ADD TO BAG | $ </button>
             </div>
             <div class="container">4 interest-free payments of $13.50. Klarna. Learn more</div>
             <div id="wishlist_btn"><i class="material-icons">favorite_border</i><a
@@ -151,8 +150,10 @@
         </div>
     </div>
 
+
     <!-- For product deatil -->
     <div id="product_specification">
+        <div style="border-top: 2px solid #dcdcdc;"></div>
         <div class="ProductTabs__Heading">Product Details
             <p>Dual-action daily hydrating sunscreen protects against UV-induced pigmentation, evens skin tone, and
                 instantly brightens skin.</p>
@@ -183,15 +184,16 @@
         <div class="newsletter">
             <p>Get Expert Beauty Insight & Offers</p>
             <form id="footer-mail-collect" onsubmit="overlaymsg(event)">
-                <div id="mail-submission-success-overlay">       
+                <div id="mail-submission-success-overlay">
                     <div>
                         <!-- <img src="https://i2.wp.com/i.pinimg.com/originals/70/a5/52/70a552e8e955049c8587b2d7606cd6a6.gif"/> -->
-                        <img src="https://thumbs.gfycat.com/ShyCautiousAfricanpiedkingfisher-max-1mb.gif" alt="successful" />
+                        <img src="https://thumbs.gfycat.com/ShyCautiousAfricanpiedkingfisher-max-1mb.gif"
+                            alt="successful" />
                         <p>You will hear from us soon!</p>
                         <div onclick="overlayMsgHide()" id="hide-overlay">Done</div>
                     </div>
                 </div>
-                <input class="footer-mail e-mail" name="e-mail" type="email" placeholder="EMAIL ADDRESS"/>
+                <input class="footer-mail e-mail" name="e-mail" type="email" placeholder="EMAIL ADDRESS" />
                 <button id="arrow-submit-btn" type="submit">
                     <i class="fa fa-arrow-right" aria-hidden="true"></i>
                 </button>
@@ -199,10 +201,12 @@
             <p>To learn more about how we use your information and your rights, see Privacy Note</p>
             <p class="icons">
                 <a href="https://twitter.com/bluemercury"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href="https://www.pinterest.com/bluemercury/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                <a href="https://www.pinterest.com/bluemercury/"><i class="fa fa-pinterest-p"
+                        aria-hidden="true"></i></a>
                 <a href="https://facebook.com/bluemercury"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                 <a href="https://instagram.com/bluemercury"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href="https://www.youtube.com/channel/UCrgUXfV7IIFllEQMbzd9J3A"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com/channel/UCrgUXfV7IIFllEQMbzd9J3A"><i class="fa fa-youtube-play"
+                        aria-hidden="true"></i></a>
             </p>
             <p> Copyright 2021 bluemercury. All Rights Reserved.</p>
         </div>

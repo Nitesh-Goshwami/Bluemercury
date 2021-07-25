@@ -166,10 +166,21 @@ End: Carousel Section
   margin-left: 12%;
   margin-top: 50px;
   float: left;
-  border-bottom: 2px solid #dcdcdc;
 }
 #product_img {
   cursor: zoom-in;
+}
+
+.side-img {
+  width: 100px;
+}
+
+.side-img:hover {
+  border: 1px solid #000;
+}
+
+.side-img:focus {
+  border: 1px solid #000;
 }
 
 .page_navigator {
@@ -181,6 +192,7 @@ End: Carousel Section
 .page_navigator span {
     font-family: Montserrat Semi Bold,sans-serif;
     color: #12284c;
+    font-weight: bold;
 }
 
 div > img:hover {
@@ -208,12 +220,12 @@ div > img:hover {
   float: left;
   padding-top: 13px;
   border: 1px solid #dcdcdc;
+  color: #5E769B;
 }
 #product_content {
   width: 40%;
   height: 600px;
   float: right;
-  border-bottom: 2px solid #dcdcdc;
   margin-top: 50px;
 }
 
@@ -252,6 +264,10 @@ div > img:hover {
   cursor: pointer;
   font-size: 14px;
 }
+
+#add_to_bag:active {
+  background-color: #5E769B;
+}
 .detail_line {
   margin-top: 15px;
   margin-bottom: 30px;
@@ -280,7 +296,7 @@ div > img:hover {
   position: relative;
   color: #12284c !important;
   cursor: pointer;
-  padding: 15px;
+  padding: 15px 15px 15px 0px;
   border: 0px solid #dcdcdc;
   width: 100%;
   height: auto;
@@ -309,7 +325,7 @@ div > img:hover {
   clear: both;
   width: 70%;
   margin: auto;
-  padding-top: 3%;
+  /* padding-top: 3%; */
 }
 
 .ProductTabs__Heading {

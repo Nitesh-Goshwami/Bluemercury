@@ -6,6 +6,7 @@ const items = [
     name: "KJAER WEIS",
     title: "Matte, Naturally Liquid Lipstick",
     price: "30",
+    prod_id_num: 101,
     img: "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-enthralling-819869029325-1_235x.jpg?v=1621349985",
   },
 
@@ -14,6 +15,7 @@ const items = [
     name: "SKINCEUTICALS",
     title: "Daily Brightening UV Defense SPF 30",
     price: "50",
+    prod_id_num: 102,
     img: "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-3606000578579-1_235x.jpg?v=1623217977",
   },
 
@@ -22,6 +24,7 @@ const items = [
     name: "M-61",
     title: "Hydraboost Gradual Tan Serum",
     price: "39",
+    prod_id_num: 103,
     img: "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-817237011552-1_235x.jpg?v=1626296817",
   },
   {
@@ -29,6 +32,7 @@ const items = [
     name: "PHYTO",
     title: "PHYTONOVATHRIX Lotion",
     price: "46",
+    prod_id_num: 104,
     img: "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-3338221003546-1_235x.jpg?v=1620672324",
   },
   {
@@ -36,6 +40,7 @@ const items = [
     name: "ORIBE",
     title: "Très Set Structure Spray",
     price: "54",
+    prod_id_num: 105,
     img: "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-840035204628-1_235x.jpg?v=1625845843",
   },
   {
@@ -43,6 +48,7 @@ const items = [
     name: "ELLIS BROOKLYN",
     title: "MYTH Spectacular Scented Body Oil",
     price: "60",
+    prod_id_num: 106,
     img: "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-852116006199-1_235x.jpg?v=1624610217",
   },
   {
@@ -50,6 +56,7 @@ const items = [
     name: "SIO BEAUTY",
     title: "SiO Energy Serum",
     price: "30",
+    prod_id_num: 107,
     img: "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-856580006709-1_235x.jpg?v=1624292184",
   },
   {
@@ -57,6 +64,7 @@ const items = [
     name: "SURRATT",
     title: "Artistique Liquid Blush",
     price: "29",
+    prod_id_num: 108,
     img: "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-cantaloup-037182655605-1_235x.jpg?v=1626338267",
   },
   {
@@ -64,6 +72,7 @@ const items = [
     name: "RAHUA",
     title: "Legendary Amazon Oil™",
     price: "42",
+    prod_id_num: 109,
     img: "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-859528006496-1_235x.jpg?v=1624292180",
   },
   {
@@ -71,6 +80,7 @@ const items = [
     name: "KJAER WEIS",
     title: "Matte, Naturally Liquid Lipstick",
     price: "51",
+    prod_id_num: 110,
     img: "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-enthralling-819869029325-1_235x.jpg?v=1621349985",
   },
 
@@ -79,6 +89,7 @@ const items = [
     name: "SKINCEUTICALS",
     title: "Daily Brightening UV Defense SPF 30",
     price: "10",
+    prod_id_num: 111,
     img: "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-3606000578579-1_235x.jpg?v=1623217977",
   },
 
@@ -87,6 +98,7 @@ const items = [
     name: "M-61",
     title: "Hydraboost Gradual Tan Serum",
     price: "19",
+    prod_id_num: 112,
     img: "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-817237011552-1_235x.jpg?v=1626296817",
   },
   {
@@ -94,6 +106,7 @@ const items = [
     name: "PHYTO",
     title: "PHYTONOVATHRIX Lotion",
     price: "66",
+    prod_id_num: 113,
     img: "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-3338221003546-1_235x.jpg?v=1620672324",
   },
   {
@@ -101,6 +114,7 @@ const items = [
     name: "ORIBE",
     title: "Très Set Structure Spray",
     price: "44",
+    prod_id_num: 114,
     img: "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-840035204628-1_235x.jpg?v=1625845843",
   },
   {
@@ -108,6 +122,7 @@ const items = [
     name: "ELLIS BROOKLYN",
     title: "MYTH Spectacular Scented Body Oil",
     price: "37",
+    prod_id_num: 115,
     img: "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-852116006199-1_235x.jpg?v=1624610217",
   },
   {
@@ -115,6 +130,7 @@ const items = [
     name: "SIO BEAUTY",
     title: "SiO Energy Serum",
     price: "80",
+    prod_id_num: 116,
     img: "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-856580006709-1_235x.jpg?v=1624292184",
   },
   {
@@ -122,6 +138,7 @@ const items = [
     name: "SURRATT",
     title: "Artistique Liquid Blush",
     price: "54",
+    prod_id_num: 117,
     img: "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-color-cantaloup-037182655605-1_235x.jpg?v=1626338267",
   },
   {
@@ -129,6 +146,7 @@ const items = [
     name: "RAHUA",
     title: "Legendary Amazon Oil™",
     price: "22",
+    prod_id_num: 118,
     img: "https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-859528006496-1_235x.jpg?v=1624292180",
   },
 ];
@@ -179,7 +197,7 @@ function showItems(l) {
     );
 
     img.addEventListener("click", function () {
-      window.location.href = "product.html";
+      addtoVisited(el);
     });
     
     var i = 0;
@@ -307,3 +325,13 @@ dropdown_price.addEventListener("click", function () {
 });
 
 
+/*************************BELOW PART DONE BY SUNNY **************/
+
+function addtoVisited(obj) {
+  console.log("Obj: ", obj);
+  let singleProdArr = [];
+  singleProdArr.push(obj);
+
+  localStorage.setItem('current_selected_prod', JSON.stringify(singleProdArr));
+  window.location.href = "product.html"; // Currently making changes in this
+}
