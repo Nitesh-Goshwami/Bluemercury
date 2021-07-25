@@ -85,6 +85,7 @@ apply.addEventListener('click', function () {
 
 function validatePayment(e) {
     e.preventDefault();
-    alert("Congratulation! Your order is successfully placed.")
+    alert("Congratulation! Your order is successfully placed.");
+    localStorage.removeItem('shopping_bag');
     window.location.href = "homepage.html"
 }
