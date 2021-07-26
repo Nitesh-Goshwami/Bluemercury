@@ -42,28 +42,32 @@ function store(e) {
     last_name,
     password,
     birthday,
+    all_orders: []
   };
 
-  if (
-    (first_name.length > 0) & (last_name.length > 0) &&
-    password.length > 0 &&
-    birthday.length > 0 &&
-    email.length > 0
-  ) {
-      window.location.href = "Login.html";
-  
-  } else {
-    alert("Please fill all the Credentials");
-  }
-
   let arr;
-  arr = localStorage.getItem("user_data"); //locations
+  arr = localStorage.getItem("all_users_data"); //locations
   if (arr == null) {
     arr = [];
   } else {
-    arr = JSON.parse(localStorage.getItem("user_data"));
+    arr = JSON.parse(localStorage.getItem("all_users_data"));
   }
 
-  arr.push(user);
-  localStorage.setItem("user_data", JSON.stringify(arr));
+  let flag = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    if (user.email == arr[i].email) {
+      console.log("In the if condition")
+      alert("User already exists, please login.")
+      flag = 1;
+      break;
+    }
+  }
+
+  if (flag == 0) {
+    arr.push(user);
+    localStorage.setItem("all_users_data", JSON.stringify(arr));
+  }
+
+  window.location.href = 'login.html';
 }

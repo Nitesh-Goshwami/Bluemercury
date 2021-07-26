@@ -111,7 +111,7 @@
                     <h1 id="create_account">CREATE ACCOUNT</h1>
                     <p id="complete_form">Complete the form below to create a bluemercury.com account.</p>
                 </header>
-                <form id="form">
+                <form id="form" onsubmit="store(event)">
                     <input type="email" id="email" class="input" placeholder="Email*" required >
                     <input type="text"  id="first_name" class="input" placeholder="First Name*" required>
                     <input type="text" id="last_name" class="input" placeholder="Last Name*" required>
@@ -140,7 +140,7 @@
                 <div>
                     <p id="privacy_policy">To learn more about how we use your information and your rights, see <a href="Signup.html">Privacy Note</a></p>
                 </div>
-                <button id="create_account_btn" onclick="store(event)" >CREATE ACCOUNT</button>
+                <button id="create_account_btn" type="submit" >CREATE ACCOUNT</button>
 
                 <div>
                     <span id="already_account">
