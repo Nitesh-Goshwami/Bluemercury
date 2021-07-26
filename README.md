@@ -13,7 +13,7 @@ This is a bluemercury website clone made using HTML, CSS and JS. It's an e-comme
 8. Thank you Page
 
 ```Features```
-1. Unique users sign-up/sign-in feature
+1. Unique users sign in/up feature
 2. Hovering Menu
 3. Slideshow on homepage
 4. Dynamic products page displaying the catalogue of products
