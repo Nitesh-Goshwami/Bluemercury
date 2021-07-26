@@ -285,7 +285,7 @@ div > img:hover {
   padding-bottom: 15px;
 }
 #wishlist_btn {
-  position: relative;
+  /* position: relative; */
   color: #12284c !important;
   cursor: pointer;
   padding: 15px 15px 15px 0px;
