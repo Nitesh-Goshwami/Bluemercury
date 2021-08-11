@@ -141,3 +141,24 @@ var page_navigator = document.getElementById('page_navigator-span');
 page_navigator.innerHTML = current_prod[0].title;
 
 cart_btn.append(current_prod[0].price);
+
+// Sign-up button change
+
+function changeAccount() {
+  let signup_btn = document.getElementById("login_change");
+  let check_user = JSON.parse(localStorage.getItem("current_user"));
+
+  if (check_user.length != 0) {
+    signup_btn.innerHTML = `<i class="fa fa-user-circle"></i> Account`;
+    signup_btn.addEventListener("click", () => {
+      window.location.href = "myaccount.html";
+    });
+  } else {
+    signup_btn.innerHTML = `<i class="fa fa-user-circle"></i> Sign in/up`;
+    signup_btn.addEventListener("click", () => {
+      window.location.href = "login.html"
+    });
+  }
+}
+
+changeAccount();

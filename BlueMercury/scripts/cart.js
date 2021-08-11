@@ -105,10 +105,6 @@ function cart_display(el) {
 
 let final_bag = JSON.parse(localStorage.getItem("shopping_bag"));
 console.log(final_bag);
-// final_bag.forEach(el => {
-//     cart_display(el);
-// });
-
 
 let total_bill = 0;
 let total_cart_items = 0;
@@ -120,7 +116,6 @@ for (let i = 0; i < final_bag.length; i++) {
 console.log(total_cart_items, total_bill)
 
 
-/******************** 8:40 pm change *************/
 var a = document.getElementsByClassName('your_Cart')[0];
 if (total_cart_items <= 1) {
     a.innerHTML = `Your Cart (${total_cart_items} item)`
@@ -129,3 +124,24 @@ if (total_cart_items <= 1) {
 }
 
 document.getElementById('cart_total').innerHTML = `Subtotal $${total_bill}`;
+
+// Sign-up button change
+
+function changeAccount() {
+  let signup_btn = document.getElementById("login_change");
+  let check_user = JSON.parse(localStorage.getItem("current_user"));
+
+  if (check_user.length != 0) {
+    signup_btn.innerHTML = `<i class="fa fa-user-circle"></i> Account`;
+    signup_btn.addEventListener("click", () => {
+      window.location.href = "myaccount.html";
+    });
+  } else {
+    signup_btn.innerHTML = `<i class="fa fa-user-circle"></i> Sign in/up`;
+    signup_btn.addEventListener("click", () => {
+      window.location.href = "login.html"
+    });
+  }
+}
+
+changeAccount();
