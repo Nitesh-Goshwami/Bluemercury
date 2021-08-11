@@ -24,36 +24,48 @@ function slideshowOffer() {
 slideshowOffer();
 
 
+const current_user = [];
+  
+if (localStorage.getItem("current_user") == null) {
+  localStorage.setItem("current_user", JSON.stringify(current_user));
+}
 
-const user_data = [
-    {
-        email,
-      password,
-    },
-  ];
+function check(e) {
   
-  if (localStorage.getItem("user_data") == null) {
-    localStorage.setItem("user_data", JSON.stringify(user_data));
+  e.preventDefault();
+
+  const form = document.getElementById("login");
+
+  const email = form.email.value;
+  const password = form.password.value;
+
+  const all_users = JSON.parse(localStorage.getItem("all_users_data"));
+
+  const current_user_credentials = {
+    email: email,
+    password: password
   }
-  function check(e) {
-    e.preventDefault();
-  
-    const form = document.getElementById("login");
-  
-    const email = form.email.value;
-    const password = form.password.value;
-  
-    const admins = JSON.parse(localStorage.getItem("user_data"));
-  
-    for (let i = 0; i < admins.length; i++) {
-      let u = admins[i].email;
-      let p = admins[i].password;
-      if (u === email && p === password) {
-        window.location.href = "myaccount.html";
-        break;
-      } else {
-          alert("invalid Credentials");
-          break;
-      }
+
+  let login_flag = 0;
+
+  for (let i = 0; i < all_users.length; i++) {
+    if (all_users[i].email == email && all_users[i].password == password) {
+      login_flag = 1;
+      current_user.push(current_user_credentials);
+      localStorage.setItem("current_user", JSON.stringify(current_user));
+      window.location.href = "myaccount.html";
+    } else if (all_users[i].email == email) {
+      login_flag = 1;
+      alert("Invalid Credentials");
     }
   }
+
+  if (login_flag == 0) {
+    alert("User does not exist, please signup first");
+    window.location.href = "signup.html";
+  }
+}
+
+function changeAccount() {
+  
+}

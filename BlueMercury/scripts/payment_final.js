@@ -3,7 +3,6 @@ var final_total = 0;
 function showCart() {
 
     let cart = JSON.parse(localStorage.getItem("shopping_bag"));
-    // console.log(cart);
 
     for (let i = 0; i < cart.length; i++) {
         appendProducts(cart[i])
@@ -53,7 +52,6 @@ function appendProducts(el) {
 
 var subtotal = document.getElementById('total_price');
 subtotal.innerHTML = `$${final_total}`;
-console.log(final_total);
 
 var apply = document.getElementById('apply_btn')
 apply.addEventListener('click', function () {
@@ -62,29 +60,23 @@ apply.addEventListener('click', function () {
     var payment_amt = document.getElementById('total_amount');
     var pay = document.createElement('span');
     
-    console.log('clicked')
-    console.log(promocode)
-    if (promocode == "") {
+    if (promocode == "" || promocode != 'masai30') {
         subtotal.innerHTML = `$${final_total}`;
         pay.append(final_total);
-        console.log("******* ", final_total)
         payment_amt.innerHTML = `$${final_total + 5}`;
     }
     if (promocode == 'masai30') {
         var new_total = final_total - (final_total * 0.30);
-        // subtotal.append(`$${final_total}`);
-        // subtotal.style.textDecoration = 'linethrough';
         subtotal.innerHTML = ` $${new_total}`;
         pay.append(new_total);
-        console.log("******* ", new_total)
         payment_amt.innerHTML = `$${new_total + 5}`;
     }
 });
 
 
-
 function validatePayment(e) {
-        e.preventDefault();
-        localStorage.removeItem('shopping_bag');
-        window.location.href = "thankyou.html"
-    } 
+    e.preventDefault();
+    localStorage.removeItem('shopping_bag');
+    localStorage.removeItem('current_selected_prod');
+    window.location.href = "thankyou.html"
+}
