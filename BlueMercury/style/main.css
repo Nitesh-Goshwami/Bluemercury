@@ -355,15 +355,17 @@ Start: Footer part
     background-color: white;
 }
 
-.specials {
-    display: flex;
-    padding: 2%;
-}
 
 
 /******************************
 Special Gifts context display
 ******************************/
+
+.specials {
+    display: flex;
+    padding: 2%;
+}
+
 .specials h2 {
     font-size: 14px;
     font-family: Montserrat Semi Bold,sans-serif;
@@ -460,3 +462,30 @@ Start: Dropdown on hover
 /*****************************
 Start: Dropdown on hover
 ******************************/
+
+/****************************
+MEDIA QUERIES
+****************************/
+
+@media screen and (max-width: 700px) {
+    .specials {
+        flex-direction: column;
+    }
+
+    .description-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-part {
+        flex-direction: column;
+    }
+
+    .footer-navwrap {
+        flex-direction: column;
+    }
+
+    .footer-navwrap ul {
+        display: none;
+    }
+}

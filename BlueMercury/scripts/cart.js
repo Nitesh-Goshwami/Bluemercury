@@ -145,3 +145,17 @@ function changeAccount() {
 }
 
 changeAccount();
+
+function checkLogin() {
+  let current_user = JSON.parse(localStorage.getItem("current_user"))
+  console.log("Here");
+
+  console.log("This is user: ", current_user);
+  if (current_user == null || current_user.length == 0) {
+    console.log("In the if")
+    alert("Please sign in before purchase");
+    window.location.href = "login.html";
+  } else {
+    window.location.href = "customer_info.html"
+  }
+}
